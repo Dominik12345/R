@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1508941759675.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "56E54D7A",
+    "lastKnownWriteTime" : 1509612461,
+    "last_content_update" : 1509612461958,
+    "path" : "~/R/KalmanFilter/SimpleKalmanFilter/sample_data.R",
+    "project_path" : "sample_data.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "marks" : "<:10,-1\n>:10,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

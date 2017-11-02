@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1508919071236.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6AC21276",
+    "lastKnownWriteTime" : 1509618246,
+    "last_content_update" : 1509618246206,
+    "path" : "~/R/KalmanFilter/SimpleKalmanFilter/Algortithm.R",
+    "project_path" : "Algortithm.R",
+    "properties" : {
+        "cursorPosition" : "38,26",
+        "marks" : "<:6,22\n>:10,21\na:74,0",
+        "scrollLine" : "20",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

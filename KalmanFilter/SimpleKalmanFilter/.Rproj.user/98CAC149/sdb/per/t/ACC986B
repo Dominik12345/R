@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "# Kalman filtering algorithm\nlibrary(pomp)\nobservation.data <- read.table('observation.data.txt')\nstate.data <- read.table('state.data.txt')\n\n\n# initialize Kalman Filter\nenkf",
+    "created" : 1508398665849.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3799236957",
+    "id" : "ACC986B",
+    "lastKnownWriteTime" : 1508918103,
+    "last_content_update" : 1508918103139,
+    "path" : "~/R/KalmanFilter/SimpleKalmanFilter/Algortithm.R",
+    "project_path" : "Algortithm.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

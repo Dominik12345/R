@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "# this script samples data of a dynamic system\n\nsource('SystemEquation.R')\nstate.data <- data.frame( \"time\" = seq(time.initial,time.final,length.out = number.measurements) )\n\nstate.error.sequence.1 <- rnorm(number.measurements,0, 0.1) \nstate.error.sequence.2 <- rnorm(number.measurements,0, 0.1)\nstate.error.sequence.3 <- state.error.sequence.1# - state.error.sequence.2\nstate.error.sequence.4 <- state.error.sequence.1# + state.error.sequence.2\n\nobservation.error.sequence.1 <- rnorm(number.measurements,0, 0.1) \nobservation.error.sequence.2 <- rnorm(number.measurements,0, 0.1)\nobservation.error.sequence.3 <- observation.error.sequence.1# - 1/sqrt(2) * observation.error.sequence.2\nobservation.error.sequence.4 <- observation.error.sequence.1# + 1/sqrt(2) * observation.error.sequence.2\n\n# sample state data\nstate.data[\"x1\"] <- state.initial[1]\nstate.data[\"x2\"] <- state.initial[2]\nfor (i in 2:number.measurements) {\n  state.data[i,-1] <- UpdateState( state.data$time[i-1] , c(state.data$x1[i-1],state.data$x2[i-1]) )  \n} \n\n# sample observation data\nobservation.data <- state.data[\"time\"]\nobservation.data[\"y1\"] <- NA\nobservation.data[\"y2\"] <- NA\nfor (i in 1:number.measurements) {\n  observation.data[i,-1] <- observation.matrix %*% c(state.data$x1[i],state.data$x2[i])\n}\n\n\n# write data into file\nwrite.table(state.data,'state.data.txt', sep=\"\\t\")\nwrite.table(observation.data, 'observation.data.txt',sep = \"\\t\")\n",
+    "created" : 1508333327768.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2061714923",
+    "id" : "B4BA8855",
+    "lastKnownWriteTime" : 1508854025,
+    "last_content_update" : 1508854025618,
+    "path" : "~/R/KalmanFilter/SimpleKalmanFilter/sample_data.R",
+    "project_path" : "sample_data.R",
+    "properties" : {
+        "marks" : "<:24,0\n>:25,0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

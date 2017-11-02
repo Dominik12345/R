@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#some global parameters\ntime.initial <- 0\ntime.final <- 10\nnumber.measurements <- 50\nradius.increase <- 0.01\nangle.increase <- pi/8\n\nstate.initial <- c(1,0)\n\n\n\n# define dynamics of a helix\nRadius <- function(t) {\n  return( radius.increase * t + sqrt(sum(state.initial^2)) )\n}\nAngle <- function(t) {\n  return(angle.increase)\n}\n\nEvolution <- function(t) {\n  out.temp <- matrix(c(0,0,0,0), nrow = 2 , ncol = 2) \n  out.temp[1,1] <- cos(Angle(t))\n  out.temp[1,2] <--sin(Angle(t))\n  out.temp[2,1] <- sin(Angle(t))\n  out.temp[2,2] <- cos(Angle(t))\n  return(Radius(t) * out.temp)\n}\n\nUpdateState <- function(t,x) {\n  return(Evolution(t) %*% x)\n}\n\n# define observation mapping\nobservation.matrix <- matrix(c(1,1,1,-1), nrow = 2, ncol = 2)\n\n# define stochastical errors\nstate.error.covariance <- matrix(c(0.1,0,0,0.1), nrow = 2, ncol = 2)\nobservation.error.covariance <- matrix(c(0.1,0,0,0.1), nrow = 2, ncol = 2)",
+    "created" : 1508398133772.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1247118043",
+    "id" : "B9087E10",
+    "lastKnownWriteTime" : 1508853936,
+    "last_content_update" : 1508853936671,
+    "path" : "~/R/KalmanFilter/SimpleKalmanFilter/SystemEquation.R",
+    "project_path" : "SystemEquation.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
