@@ -105,24 +105,24 @@ pdf(file = "C:/Users/kahl/Documents/Images/review_R.pdf")
 par(mfrow = c(3,3) )
 
 plot(observation.data$y1, xlab = "time step", ylab = "", type = "n")
-points(observation.data$y1, lty = 1)
-lines(unperturbedobservation.data$y1, lty =2)
-lines(pomp.results@forecast[1,], lty = 3)
-legend("topright", c("y1", "y1 unpert", "y1 forecast"), lty = c(1,2,3))
+points(observation.data$y1, pch = 1)
+#lines(unperturbedobservation.data$y1, lty =2)
+lines(pomp.results@forecast[1,], lty = 1)
+legend("top", c("y1", "y1 forecast"), pch =c(1,NA) ,lty = c(NA,1))
 title("y1")
 
 plot(observation.data$y2, xlab = "time step", ylab = "", type = "n")
-points(observation.data$y2, lty = 1)
-lines(unperturbedobservation.data$y2, lty =2)
-lines(pomp.results@forecast[2,], lty = 3)
-legend("topright", c("y2", "y2 unpert", "y2 forecast"), lty = c(1,2,3))
+points(observation.data$y2, pch = 1)
+#lines(unperturbedobservation.data$y2, lty =2)
+lines(pomp.results@forecast[2,], lty = 1)
+legend("topright", c("y2", "y2 forecast"), pch = c(1,NA),lty = c(NA,1))
 title("y2")
 
 plot(observation.data$y3, xlab = "time step", ylab = "", type = "n")
 points(observation.data$y3, lty = 1)
-lines(unperturbedobservation.data$y3, lty =2)
-lines(pomp.results@forecast[3,], lty = 3)
-legend("topright", c("y3", "y3 unpert", "y3 forecast"), lty = c(1,2,3))
+#lines(unperturbedobservation.data$y3, lty =2)
+lines(pomp.results@forecast[3,], lty = 1)
+legend("bottomright", c("y3", "y3 forecast"), pch = c(1,NA),lty = c(NA,1))
 title("y3")
 
 
@@ -132,7 +132,7 @@ plot(pomp.results@filter.mean[1,], xlab = "time step", ylab = "",
      type = "n")
 lines(pomp.results@filter.mean[1,],lty = 1)
 lines(state.data$x1  ,lty = 2)
-legend("topright", c("x1_filter", "x1_true"), lty = c(1,2))
+legend("bottomright", c("x1_filter", "x1_true"), lty = c(1,2))
 title("x1")
 
 plot(pomp.results@filter.mean[2,], xlab = "time step", ylab = "", 
@@ -153,21 +153,21 @@ plot(pomp.results@filter.mean[4,], xlab = "time step", ylab = "",
      type = "n")
 lines(pomp.results@filter.mean[4,],lty = 1)
 lines(state.data$x4  ,lty = 2)
-legend("topright", c("x4_filter", "x4_true"), lty = c(1,2))
+legend("bottom", c("x4_filter", "x4_true"), lty = c(1,2))
 title("x4")
 
 plot(pomp.results@filter.mean[5,], xlab = "time step", ylab = "", 
      type = "n")
 lines(pomp.results@filter.mean[5,],lty = 1)
 lines(state.data$x5  ,lty = 2)
-legend("topright", c("x5_filter", "x5_true"), lty = c(1,2))
+legend("bottomright", c("x5_filter", "x5_true"), lty = c(1,2))
 title("x5")
 
 plot(pomp.results@filter.mean[6,], xlab = "time step", ylab = "", 
      type = "n")
 lines(pomp.results@filter.mean[6,],lty = 1)
 lines(state.data$x6  ,lty = 2)
-legend("topright", c("x6_filter", "x6_true"), lty = c(1,2))
+legend("bottomright", c("x6_filter", "x6_true"), lty = c(1,2))
 title("x6")
 
 dev.off()
