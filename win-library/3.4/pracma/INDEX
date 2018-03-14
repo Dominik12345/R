@@ -65,7 +65,6 @@ deeve                   Event Detection in ODE solution
 deg2rad                 Degrees to Radians
 detrend                 Remove Linear Trends
 deval                   Evaluate ODE Solution
-direct1d                Univariate Global Optimization
 disp                    Utility functions (Matlab style)
 distmat                 Distance Matrix
 dot                     Scalar Product
@@ -204,6 +203,7 @@ perms                   Generate Permutations
 piecewise               Piecewise Linear Function
 pinv                    Pseudoinverse or Generalized Inverse
 plotyy                  Plotting Two y-Axes
+poisson2disk            Poisson Disk Sampling
 polar                   Polar Coordinate Plot (Matlab Style)
 poly2str                Print Polynomial
 polyApprox              Polynomial Approximation
@@ -264,6 +264,7 @@ segm_distance           Segment Distance
 segm_intersect          Segment Intersection
 semilogx                Semi-logarithmic Plots (Matlab Style)
 shooting                Shooting Method
+shubert                 Shubert-Piyavskii Method
 sigmoid                 Sigmoid Function
 simpadpt                Adaptive Simpson Quadrature
 simpson2d               Double Simpson Integration

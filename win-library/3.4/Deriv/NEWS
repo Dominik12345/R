@@ -1,3 +1,17 @@
+Version 3.8.4
+=============
+
+* 2018-02-15
+ - fixed calls to Deriv() when f is a closure (issue #17)
+ - fixed call to Deriv_() when some arguments of f are not differentiable
+
+Version 3.8.3
+=============
+
+* 2017-11-21
+ - fixed derivation of arguments passed as c() call (issue #15)
+ - edited README.md to push forward possibility to add custom differentiation rules (issue #16)
+
 Version 3.8.2
 =============
 

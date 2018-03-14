@@ -84,7 +84,6 @@ deg2rad	deg2rad
 detrend	detrend
 deval	deval
 Diag	diag
-direct1d	direct1d
 disp	beep
 distmat	distmat
 dot	dot
@@ -289,6 +288,7 @@ perms	perms
 piecewise	piecewise
 pinv	pinv
 plotyy	plotyy
+poisson2disk	poisson2disk
 pol2cart	cart2sph
 polar	polar
 Poly	poly
@@ -383,6 +383,7 @@ semilogx	semilog
 semilogy	semilog
 shellSort	sorting
 shooting	shooting
+shubert	shubert
 sigmoid	sigmoid
 signm	sqrtm
 simpadpt	simpadpt

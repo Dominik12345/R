@@ -1,0 +1,8 @@
+Eval                    Evaluate a yacas expression.
+Ryacas-package          R interface to yacas computer algebra package
+Sym                     Sym
+bodyAsExpression        Get body of function as an expression.
+yacas                   yacas interface
+yacasTranslations       Yacas translations
+yacas_evaluate          Evaluate yacas expression
+yacmode                 yacmode interface
