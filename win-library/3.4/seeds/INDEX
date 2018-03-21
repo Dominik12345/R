@@ -1,3 +1,4 @@
+createFunctions         creates files for costate and argumented state
 dynElasticNet           estimating the optimal control using the
                         dynamic elastic net
 greedyApproach          Greedy Approach Algorithm
@@ -8,6 +9,6 @@ odeEquations-class      A S4 class used to handle formating
                         for the seeds-algorithm
 seeds-package           seeds: Estimate hidden inputs using the method
                         of the dynamic elastic net
-symbolicDiff            Implement the cost function of the dynamic
-                        elastic net
+symbolicDiff            Symbolic differentiation to create the adjoint
+                        equations
 uvbData                 UVB signal pathway

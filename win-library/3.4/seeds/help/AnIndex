@@ -1,9 +1,10 @@
 seeds-package	seeds-package
+createFunctions	createFunctions
 dynElasticNet	dynElasticNet
 greedyApproach	greedyApproach
 jakstatInput	jakstatInput
 jakstatMeasurement	jakstatMeasurement
-odeEq	odeEquations-class
+odeEquations	odeEquations-class
 odeEquations-class	odeEquations-class
 seeds	seeds-package
 symbolicDiff	symbolicDiff
