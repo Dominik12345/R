@@ -15,19 +15,20 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
 Imports: deSolve (>= 1.20), pracma (>= 2.1.4), Deriv (>= 3.8.4),
-        Ryacas, stats, graphics, methods
+        Ryacas, stats, graphics, methods, mvtnorm, statmod, coda, MASS,
+        ggplot2, tidyr, dplyr, Hmisc
 Suggests: parallel (>= 3.4.3), doParallel (>= 1.0.11), foreach (>=
         1.4.4)
 Author: Tobias Newmiwaka [aut, cre]
 Maintainer: Tobias Newmiwaka <tobias.newmiwaka@gmail.com>
-Built: R 3.4.2; ; 2018-03-19 12:15:13 UTC; windows
+Built: R 3.4.4; ; 2018-05-04 10:56:18 UTC; windows
 RemoteType: github
 RemoteHost: https://api.github.com
 RemoteRepo: seeds
 RemoteUsername: Newmi1988
 RemoteRef: master
-RemoteSha: 204b092de2e6e7edf8072011e29d352801454eb5
+RemoteSha: d0c9e74ee5a6dfbe69b63e08c20176de8ef7a8a2
 GithubRepo: seeds
 GithubUsername: Newmi1988
 GithubRef: master
-GithubSHA1: 204b092de2e6e7edf8072011e29d352801454eb5
+GithubSHA1: d0c9e74ee5a6dfbe69b63e08c20176de8ef7a8a2

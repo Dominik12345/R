@@ -1,11 +1,14 @@
 seeds-package	seeds-package
+createCompModel	createCompModel
 createFunctions	createFunctions
 dynElasticNet	dynElasticNet
 greedyApproach	greedyApproach
-jakstatInput	jakstatInput
-jakstatMeasurement	jakstatMeasurement
 odeEquations	odeEquations-class
 odeEquations-class	odeEquations-class
+plot,resultsSeeds,missing-method	resultsSeeds-methods
+plotAnno,resultsSeeds-method	resultsSeeds-methods
+resultsSeeds	resultsSeeds-class
+resultsSeeds-class	resultsSeeds-class
 seeds	seeds-package
 symbolicDiff	symbolicDiff
 uvbData	uvbData

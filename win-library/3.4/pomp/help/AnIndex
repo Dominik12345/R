@@ -77,6 +77,7 @@ coef.rec-mifList	mif
 coef<-	pomp_methods
 coef<-,pomp-method	pomp_methods
 coef<--pomp	pomp_methods
+coerce,Csnippet,character-method	pomp
 coerce,kalmand.pomp,data.frame-method	kalman
 coerce,pfilterd.pomp,data.frame-method	pfilter
 coerce,pomp,data.frame-method	pomp_methods
@@ -171,6 +172,7 @@ filter.traj-pfilterd.pomp	pfilter
 filter.traj-pmcmc	pmcmc
 filter.traj-pmcmcList	pmcmc
 freeze	bake
+gillespie.hl.sim	pomp
 gillespie.sim	pomp
 gillespie.sir	sir
 gompertz	gompertz

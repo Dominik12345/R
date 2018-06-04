@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: seeds: Estimate hidden inputs using the method of the dynamic...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for seeds-package {seeds}"><tr><td>seeds-package {seeds}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>seeds: Estimate hidden inputs using the method of the dynamic elastic net</h2>
+
+<h3>Description</h3>
+
+<p>A package combining two different algorithms for calculating hidden
+inputs. These hidden inputs can be interpreted as a controll that tries to minimize the
+discrepancies between a given model and a given measurements. The method is
+also called the 'dynamic elastic net'.
+</p>
+
+
+<h3>Details</h3>
+
+<p>Details
+</p>
+<p>The algorithm calcultes the needed equations using the <code><a href="../../Deriv/html/Deriv.html">Deriv</a></code>
+function of the <span class="pkg">Deriv</span> package. The process is implemented through the use
+of the S4 class <code><a href="odeEquations-class.html">odeEquations-class</a></code>. 
+</p>
+<p>The conjugate gradient based algorithm uses a greedy algorithm to estimate a 
+sparse controll that tries to minimize the discrepancies between a given 
+'nominal model given the measurements (e.g from an experiment). The algorithm
+the <code><a href="../../deSolve/html/ode.html">ode</a></code> uses <span class="pkg">deSolve</span> to calculate the hidden inputs w 
+based on the adjoint equations of the ODE-System. 
+</p>
+<p>The adjoint equations are calculated using the <code><a href="../../deSolve/html/ode.html">ode</a></code> function of the 
+<span class="pkg">deSolve</span> package. For the usage of the algorithm please look into the 
+examples and documentation given for the functions 
+</p>
+
+<dl>
+<dt><code><a href="greedyApproach.html">greedyApproach</a></code></dt><dd><p>a greedy algorithm to calculate a sparse control</p>
+</dd>
+<dt><code><a href="dynElasticNet.html">dynElasticNet</a></code></dt><dd><p>a conjugate gradient optimal control algorithm with L2 regulation</p>
+</dd> 
+</dl>
+
+
+
+<h3>Author(s)</h3>
+
+<p><strong>Maintainer</strong>: Tobias Newmiwaka <a href="mailto:tobias.newmiwaka@gmail.com">tobias.newmiwaka@gmail.com</a>
+</p>
+
+
+<h3>References</h3>
+
+<p><strong>Benjamin Engelhardt, Holger Fröhlich, Maik Kschischo</strong> 
+Learning (from) the errors of a systems biology model, <em>Nature Scientific Reports</em>,
+6, 20772, 2016 <a href="https://www.nature.com/articles/srep20772">https://www.nature.com/articles/srep20772</a>
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>seeds</em> version 0.0.2 <a href="00Index.html">Index</a>]</div>
+</body></html>

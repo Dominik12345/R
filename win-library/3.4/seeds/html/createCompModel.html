@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Create compilable c-code of a model</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for createCompModel {seeds}"><tr><td>createCompModel {seeds}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Create compilable c-code of a model</h2>
+
+<h3>Description</h3>
+
+<p>Writes a c file that can be compiled for faster solution with the <code><a href="../../deSolve/html/ode.html">ode</a></code> solver.
+The file created is formated to be used with the dynamic elastic net. A hidden input is 
+added to every component of the state vector.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+createCompModel(modelFunc, parameters, bden)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>modelFunc</code></td>
+<td>
+<p>a R-function that can be solved with deSolve. External input of the system should
+be declared with 'u'. To ensure that the function is working use the most general
+state-space representation.</p>
+</td></tr>
+<tr valign="top"><td><code>parameters</code></td>
+<td>
+<p>a vector describing the parameters of the system. If names are missing the function
+tries to extract the declared parameters from the model function.</p>
+</td></tr>
+<tr valign="top"><td><code>bden</code></td>
+<td>
+<p>a boolean that indicates if the c-file is used for the mcmc algorithm</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>None
+</p>
+
+
+<h3>Note</h3>
+
+<p>On the usage of compiled code in conjunction with <span class="pkg">deSolve</span> take a look into the vignette 'R
+Package deSolve, Writing Code in Compiled Languages' of the package.
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>seeds</em> version 0.0.2 <a href="00Index.html">Index</a>]</div>
+</body></html>

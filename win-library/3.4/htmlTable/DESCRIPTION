@@ -1,8 +1,12 @@
 Package: htmlTable
-Version: 1.9
-Date: 2017-01-25
+Version: 1.11.2
+Date: 2018-01-20
 Title: Advanced Tables for Markdown/HTML
-Author: Max Gordon <max@gforge.se>
+Authors@R: c(
+  person("Max", "Gordon", email = "max@gforge.se",
+         role = c("aut", "cre")),
+  person("Stephen", "Gragg", role=c("aut")),
+  person("Peter", "Konings", role=c("aut")))
 Maintainer: Max Gordon <max@gforge.se>
 Description: Tables with state-of-the-art layout elements such as row spanners,
     column spanners, table spanners, zebra striping, and more. While allowing
@@ -15,14 +19,18 @@ URL: http://gforge.se/packages/
 BugReports: https://github.com/gforge/htmlTable/issues
 Biarch: yes
 Imports: stringr, knitr (>= 1.6), magrittr (>= 1.5), methods,
-        checkmate, htmlwidgets
+        checkmate, htmlwidgets, htmltools, rstudioapi (>= 0.6)
 Suggests: testthat, XML, xtable, ztable, Hmisc, reshape, rmarkdown,
-        pander, chron, lubridate
+        pander, chron, lubridate, tibble, tidyr (>= 0.7.2), dplyr (>=
+        0.7.4)
 Encoding: UTF-8
 NeedsCompilation: no
 VignetteBuilder: knitr
-RoxygenNote: 5.0.1
-Packaged: 2017-01-25 10:39:00 UTC; max
+RoxygenNote: 6.0.1
+Packaged: 2018-01-20 14:03:06 UTC; Max
+Author: Max Gordon [aut, cre],
+  Stephen Gragg [aut],
+  Peter Konings [aut]
 Repository: CRAN
-Date/Publication: 2017-01-26 12:08:14
-Built: R 3.4.2; ; 2017-10-23 12:22:03 UTC; windows
+Date/Publication: 2018-01-20 15:30:21 UTC
+Built: R 3.4.4; ; 2018-04-02 02:41:07 UTC; windows

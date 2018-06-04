@@ -65,7 +65,7 @@ system.Dynamics <- function(x,t,params,delta.t,...) {
 # observation
 system.ExpectedObservation <- function(x,t) {
   with(as.list(c(x , system.parameters)),{
-    temp1 <- psi_1 * (x2 + x6)
+    temp1 <- psi_1 * (x2 + 2 * x6)
     temp2 <- psi_2 * x3 
     temp3 <- psi_3 * (x4 + x5)
     out <- c( "y1" = temp1,

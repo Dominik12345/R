@@ -1,12 +1,14 @@
+createCompModel         Create compilable c-code of a model
 createFunctions         creates files for costate and argumented state
 dynElasticNet           estimating the optimal control using the
                         dynamic elastic net
 greedyApproach          Greedy Approach Algorithm
-jakstatInput            Input of the Jak2/Stat5 signaling pathway
-jakstatMeasurement      Data from the JakStat signaling
 odeEquations-class      A S4 class used to handle formating
                         ODE-Equation and calculate the needed functions
                         for the seeds-algorithm
+plot,resultsSeeds,missing-method
+                        Plot method for the S4 class resultsSeeds
+resultsSeeds-class      Results Class for the Algorithms
 seeds-package           seeds: Estimate hidden inputs using the method
                         of the dynamic elastic net
 symbolicDiff            Symbolic differentiation to create the adjoint

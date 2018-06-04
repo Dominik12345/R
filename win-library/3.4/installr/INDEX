@@ -61,9 +61,11 @@ install.SWFTools        Downloads and installs SWFTools for windows
 install.Texmaker        Downloads and installs Texmaker for windows
 install.URL             Downloads and runs a .exe installer file for
                         some software from a URL
+install.conda           Downloads and installs miniconda
 install.git             Downloads and installs git and git-gui for
                         windows
 install.inno            Downloads and installs Inno Setup
+install.nodejs          Downloads and installs nodejs LTS or Current
 install.notepadpp       Downloads and installs Notepad++ for windows
 install.npptor          Downloads and installs NppToR for windows
 install.packages.zip    Downloads and installs a ZIP R package Binary
@@ -82,6 +84,7 @@ is.empty                Checks if an object is empty (e.g: of zero
 is.exe.installed        Checks if some .exe is available in on the
                         Windows machine search PATH
 is.windows              Checks if the running OS is windows
+is.x64                  Checks if the running OS is x64
 is_in_.First_in_Rprofile.site
                         Remove a code line from Rprofile.site .First
 kill_all_Rscript_s      kill (i.e.: stop) all running "Rscript"

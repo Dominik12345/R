@@ -25,6 +25,7 @@ get_tasklist	get_tasklist
 install.7zip	install.7zip
 install.CMake	install.CMake
 install.cmake	install.CMake
+install.conda	install.conda
 install.Cygwin	install.Cygwin
 install.cygwin	install.Cygwin
 install.FFmpeg	install.FFmpeg
@@ -43,6 +44,7 @@ install.LyX	install.LyX
 install.lyx	install.LyX
 install.MikTeX	install.MikTeX
 install.miktex	install.MikTeX
+install.nodejs	install.nodejs
 install.notepadpp	install.notepadpp
 install.npptor	install.npptor
 install.packages.zip	install.packages.zip
@@ -65,6 +67,7 @@ is.exe.installed	is.exe.installed
 is.Rgui	is.Rgui
 is.RStudio	is.RStudio
 is.windows	is.windows
+is.x64	is.x64
 is_in_.First_in_Rprofile.site	is_in_.First_in_Rprofile.site
 kill_all_Rscript_s	kill_all_Rscript_s
 kill_pid	kill_pid

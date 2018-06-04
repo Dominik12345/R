@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: A S4 class used to handle formating ODE-Equation and...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for odeEquations-class {seeds}"><tr><td>odeEquations-class {seeds}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>A S4 class used to handle formating ODE-Equation and calculate the needed functions for the seeds-algorithm</h2>
+
+<h3>Description</h3>
+
+<p>A S4 class used to handle formating ODE-Equation and calculate the needed functions for the seeds-algorithm
+</p>
+
+
+<h3>Slots</h3>
+
+
+<dl>
+<dt><code>modelStr</code></dt><dd><p>a vector of strings describing the ODE</p>
+</dd>
+<dt><code>measureStr</code></dt><dd><p>a vector of strings representing the equation of the measurement function</p>
+</dd>
+<dt><code>origEq</code></dt><dd><p>a vector of strings containing the original model function</p>
+</dd>
+<dt><code>measureFunction</code></dt><dd><p>a vector of strings containing the original measurement function</p>
+</dd>
+<dt><code>costateEq</code></dt><dd><p>a vector of strings describing the costate equation</p>
+</dd>
+<dt><code>JhT</code></dt><dd><p>a matrix of strings describing the jacobian matrix of the measurement function</p>
+</dd>
+<dt><code>jacobian</code></dt><dd><p>a matrix of strings representing the jacobian matrix model equations</p>
+</dd>
+<dt><code>costFunction</code></dt><dd><p>a string containing the cost function</p>
+</dd>
+<dt><code>hamiltonian</code></dt><dd><p>a string representing the Hamilton function of the model</p>
+</dd>
+<dt><code>dynamicElasticNet</code></dt><dd><p>boolean that indicates if the system equation should be calculated for the dynamic elastic net</p>
+</dd>
+<dt><code>parameters</code></dt><dd><p>parameters of the model</p>
+</dd>
+</dl>
+
+<hr /><div style="text-align: center;">[Package <em>seeds</em> version 0.0.2 <a href="00Index.html">Index</a>]</div>
+</body></html>

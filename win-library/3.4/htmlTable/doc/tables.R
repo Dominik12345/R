@@ -169,7 +169,7 @@ htmlTable(out_mx,
                      "2nd&nbsp;period",
                      "3rd&nbsp;period"),
           n.rgroup = rep(5, 3),
-          tfoot = txtMergeLines("&Delta;<sub>int</sub> correspnds to the change since start",
+          tfoot = txtMergeLines("&Delta;<sub>int</sub> corresponds to the change since start",
                                 "&Delta;<sub>std</sub> corresponds to the change compared to national average"),
           cspan.rgroup = 1)
 

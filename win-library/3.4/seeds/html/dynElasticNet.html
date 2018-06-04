@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: estimating the optimal control using the dynamic elastic net</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for dynElasticNet {seeds}"><tr><td>dynElasticNet {seeds}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>estimating the optimal control using the dynamic elastic net</h2>
+
+<h3>Description</h3>
+
+<p>estimating the optimal control using the dynamic elastic net
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+dynElasticNet(alphaStep, armijoBeta, x0, parameters, times, alpha1, alpha2,
+  measData, constStr, STD, modelFunc, measFunc, modelInput, optW, origAUC,
+  maxIteration, plotEsti, conjGrad, eps)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>alphaStep</code></td>
+<td>
+<p>starting value of the stepsize for the gradient descent, will be calculate to minimize the costfunction by backtracking algorithm</p>
+</td></tr>
+<tr valign="top"><td><code>armijoBeta</code></td>
+<td>
+<p>scaling of the alphaStep to find a approximatly optimal value for the stepsize</p>
+</td></tr>
+<tr valign="top"><td><code>x0</code></td>
+<td>
+<p>initial state of the ode system</p>
+</td></tr>
+<tr valign="top"><td><code>parameters</code></td>
+<td>
+<p>parameters of the ODE-system</p>
+</td></tr>
+<tr valign="top"><td><code>times</code></td>
+<td>
+<p>measurement times at which the estimations will be evaluated</p>
+</td></tr>
+<tr valign="top"><td><code>alpha1</code></td>
+<td>
+<p>L1 cost term skalar</p>
+</td></tr>
+<tr valign="top"><td><code>alpha2</code></td>
+<td>
+<p>L2 cost term skalar</p>
+</td></tr>
+<tr valign="top"><td><code>measData</code></td>
+<td>
+<p>measured values of the experiment</p>
+</td></tr>
+<tr valign="top"><td><code>constStr</code></td>
+<td>
+<p>a string that represents constrains, can be used to calculate a hidden input for a komponent that gradient is zero</p>
+</td></tr>
+<tr valign="top"><td><code>STD</code></td>
+<td>
+<p>standard deviation of the experiment; leave empty if unknown</p>
+</td></tr>
+<tr valign="top"><td><code>modelFunc</code></td>
+<td>
+<p>function that describes the ODE-system of the model</p>
+</td></tr>
+<tr valign="top"><td><code>measFunc</code></td>
+<td>
+<p>function that maps the states to the outputs</p>
+</td></tr>
+<tr valign="top"><td><code>modelInput</code></td>
+<td>
+<p>an dataset that discribes the external input of the system</p>
+</td></tr>
+<tr valign="top"><td><code>optW</code></td>
+<td>
+<p>vector that indicated at which knots of the network the alogrithm should estimate the hidden inputs</p>
+</td></tr>
+<tr valign="top"><td><code>origAUC</code></td>
+<td>
+<p>AUCs of the first optimisation; only used by the algorithm</p>
+</td></tr>
+<tr valign="top"><td><code>maxIteration</code></td>
+<td>
+<p>a upper bound for the maximal number of iterations</p>
+</td></tr>
+<tr valign="top"><td><code>plotEsti</code></td>
+<td>
+<p>boolean that controlls of the current estimates should be plotted</p>
+</td></tr>
+<tr valign="top"><td><code>conjGrad</code></td>
+<td>
+<p>boolean that indicates the usage of conjugate gradient method over the normal steepest descent</p>
+</td></tr>
+<tr valign="top"><td><code>eps</code></td>
+<td>
+<p>citeria for stopping the algorithm</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>A list containing the estimated hidden inputs, the AUCs, the estimated states and resulting measurements and the costfunction
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>seeds</em> version 0.0.2 <a href="00Index.html">Index</a>]</div>
+</body></html>

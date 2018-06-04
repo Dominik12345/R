@@ -1,3 +1,17 @@
+1.0.1
+ - Fix a unit test from  http://pki.goog/ (google changed servers)
+
+1.0
+ - Add the 'name' field to read_p12() output
+ - Add write_pkcs1() for legacy OpenSSH keys
+ - Fix unit tests using http://pki.goog/ (Google changed crt files to DER)
+
+0.9.9
+ - Workaround failing test on Mavericks due to IPv6 firewall issue
+
+0.9.8
+ - Fix build on OSX Mavericks
+
 0.9.7
  - Configure script checks SHLIB_VERSION_NUMBER to find matching lib
  - Added internal stopifnot() replacement to give more helpful error mesasges
